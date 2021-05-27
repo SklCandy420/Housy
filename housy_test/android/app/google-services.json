@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "234282504712",
+    "project_id": "housy-test",
+    "storage_bucket": "housy-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234282504712:android:2f2b90d5cb339bb3d037bd",
+        "android_client_info": {
+          "package_name": "com.example.housy_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234282504712-f7n76ulif6nuuvk2adubrrv05jp2oake.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.housy_test",
+            "certificate_hash": "4fe16d421fe2f2d931c3df47900e5ef007ca3531"
+          }
+        },
+        {
+          "client_id": "234282504712-040m3r4lcgoegdtesajd92lhbo6v8elq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANTpkSb9BQ8Cp1BjXrf2tii04UL_wE1iU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234282504712-040m3r4lcgoegdtesajd92lhbo6v8elq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
