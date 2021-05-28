@@ -4,7 +4,7 @@ import 'package:housy_test/components/constants.dart';
 import 'package:housy_test/components/widgets/default_button.dart';
 import 'package:housy_test/components/widgets/loading.dart';
 import 'package:housy_test/helpers/size_config.dart';
-import 'package:housy_test/screens/home.dart';
+import 'package:housy_test/screens/home/profile_home.dart';
 import 'package:housy_test/services/databaseServices/dbServices.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -24,7 +24,7 @@ class _InitProfileState extends State<InitProfile>
       });
       if (value == true) {
         Navigator.of(context).pushReplacement(
-            new MaterialPageRoute(builder: (context) => Home()));
+            new MaterialPageRoute(builder: (context) => ProfileHome()));
       } else {
         Navigator.of(context).pushReplacement(
             new MaterialPageRoute(builder: (context) => Register()));
@@ -215,6 +215,6 @@ class _RegisterState extends State<Register> {
     };
     await _services.addUserData(_payload);
     Navigator.of(context)
-        .push(new MaterialPageRoute(builder: (context) => Home()));
+        .push(new MaterialPageRoute(builder: (context) => ProfileHome()));
   }
 }

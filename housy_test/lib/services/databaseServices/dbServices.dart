@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:housy_test/helpers/globals.dart';
+import 'package:housy_test/models/user.dart';
 
 class DataBaseServices {
   Future<bool> searchUser() async {
@@ -9,6 +10,7 @@ class DataBaseServices {
         .get();
     return _userDoc.exists;
   }
+
 
   addUserData(Map<String, dynamic> payload) async {
     await FirebaseFirestore.instance
