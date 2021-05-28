@@ -17,10 +17,12 @@ class _PhoneState extends State<Phone> {
     SizeConfig().init(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text('Login'),
+        title: Text(
+          'Login',
+        ),
         centerTitle: true,
         elevation: 0,
-        backgroundColor: kPrimaryColor,
+        backgroundColor: ksecondaryColor,
       ),
       body: SafeArea(
         child: SizedBox(
@@ -40,12 +42,6 @@ class _PhoneState extends State<Phone> {
                     fit: BoxFit.contain,
                   ),
                   NumberForm(),
-                  SizedBox(height: getProportionateScreenHeight(30)),
-                  Text(
-                    "By continuing your confirm that you agree \nwith our Term and Condition",
-                    textAlign: TextAlign.center,
-                    style: Theme.of(context).textTheme.caption,
-                  ),
                 ],
               ),
             ),

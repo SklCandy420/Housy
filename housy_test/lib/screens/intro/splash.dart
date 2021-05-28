@@ -1,6 +1,5 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:housy_test/components/constants.dart';
 import 'package:housy_test/components/widgets/root.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -21,9 +20,10 @@ class _SplashScreenState extends State<SplashScreen> {
       splash: Image.asset(
         'assets/logo.jpg',
       ),
+      splashIconSize: 400,
       nextScreen: Root(),
-      splashTransition: SplashTransition.scaleTransition,
-      backgroundColor: kPrimaryColor,
+      splashTransition: SplashTransition.sizeTransition,
+      backgroundColor: Colors.lightBlue.shade300,
     );
   }
 }

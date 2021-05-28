@@ -51,10 +51,12 @@ class _OTPScreenState extends State<OTPScreen> {
     SizeConfig().init(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text("OTP Verification"),
+        title: Text(
+          "OTP Verification",
+        ),
         centerTitle: true,
         elevation: 0,
-        backgroundColor: kPrimaryColor,
+        backgroundColor: ksecondaryColor,
       ),
       body: SizedBox(
         width: double.infinity,

@@ -16,6 +16,7 @@ const MaterialColor kPrimaryColor = const MaterialColor(
     900: const Color(0xff001D79),
   },
 );
+final ksecondaryColor = Colors.lightBlue.shade300;
 const kPrimaryLightColor = Color(0xFFF2F3F7);
 const kPrimaryGradientColor = LinearGradient(
   begin: Alignment.topLeft,
