@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:housy_test/helpers/globals.dart';
-import 'package:housy_test/screens/home/category_container.dart';
-import 'package:housy_test/screens/service/calendar.dart';
-import 'package:housy_test/states/state_management.dart';
+import 'package:housy_test/screens/professionals/professional_container.dart';
 
-class Home extends StatefulWidget {
+class ProfessionalScreen extends StatefulWidget {
   @override
-  _HomeState createState() => _HomeState();
+  _ProfessionalScreenState createState() => _ProfessionalScreenState();
 }
 
-class _HomeState extends State<Home> {
+class _ProfessionalScreenState extends State<ProfessionalScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +20,7 @@ class _HomeState extends State<Home> {
               height: 11,
             ),
             Text(
-              "Preferences",
+              "Professionals",
               style: Theme.of(context).textTheme.headline4.apply(
                     fontWeightDelta: 2,
                     color: Colors.black,
@@ -44,17 +42,7 @@ class _HomeState extends State<Home> {
                     childAspectRatio: .7),
                 itemCount: catList.length,
                 itemBuilder: (BuildContext context, int index) {
-                  return InkWell(
-                      onTap: () {
-                        StateManagement.qprefs
-                            .setString("category", catList[index].title);
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (context) => HomeCalendarPage(),
-                          ),
-                        );
-                      },
-                      child: CategoryContainer(id: index));
+                  return ProfessionalContainer(id: index);
                 },
               ),
             ),

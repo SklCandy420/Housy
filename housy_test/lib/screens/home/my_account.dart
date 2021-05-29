@@ -165,7 +165,7 @@ class _AccountState extends State<Account> {
                                         height:
                                             getProportionateScreenHeight(30)),
                                     DefaultButton(
-                                      text: "continue",
+                                      text: "Update",
                                       press: () async {
                                         if (_formKey.currentState.validate()) {
                                           setState(() {
@@ -177,7 +177,7 @@ class _AccountState extends State<Account> {
                                                   : snapshot.data['first_name'],
                                               lastName != null
                                                   ? lastName
-                                                  : snapshot.data['lastt_name'],
+                                                  : snapshot.data['last_name'],
                                               address != null
                                                   ? address
                                                   : snapshot.data['address']);

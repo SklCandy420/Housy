@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:housy_test/components/constants.dart';
+import 'package:housy_test/components/widgets/drawer.dart';
 import 'package:housy_test/screens/home/home.dart';
 import 'package:housy_test/screens/home/my_account.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
@@ -32,6 +33,7 @@ class _ProfileHomeState extends State<ProfileHome>
         ),
         child: Scaffold(
           key: _scaffoldKey,
+          drawer: drawerHousy(context),
           appBar: _selectedIndex != 1
               ? AppBar(
                   title: Row(
@@ -52,7 +54,7 @@ class _ProfileHomeState extends State<ProfileHome>
                       )
                     ],
                   ),
-                  backgroundColor: kPrimaryColor,
+                  backgroundColor: ksecondaryColor,
                   elevation: 0,
                 )
               : null,

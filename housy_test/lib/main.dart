@@ -6,11 +6,13 @@ import 'package:housy_test/screens/intro/splash.dart';
 import 'package:housy_test/screens/network.dart';
 import 'package:housy_test/services/authServices/authServices.dart';
 import 'package:housy_test/services/connectivity/connectivity_state.dart';
+import 'package:housy_test/states/state_management.dart';
 import 'package:provider/provider.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+  await StateManagement.init();
   runApp(MyApp());
 }
 
